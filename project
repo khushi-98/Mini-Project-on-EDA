@@ -1,0 +1,56 @@
+import pandas as pd 
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+ 
+df =pd.read_csv("nbaDataset.csv")
+df.head()
+print(df.head())
+
+# print(df.tail(5))
+# print(df.dtypes)
+# c=pd.unique(df['Age'])
+# print(c)
+
+# df=df.drop(['Age'],axis=1)
+# d=df.head(5)
+# print(d)
+
+# df=df.rename(columns={"Age":"Current Age"})
+# e=df.head(5)
+# print(e)
+
+# f=df.drop_duplicates(subset="Name",keep=False,inplace=True)
+# print(f)
+
+# g=df.count
+# print(g)
+
+# h=(df.isnull().sum())
+# print(h)
+
+# df=df.dropna()
+# df.count()
+
+# i=sns.boxplot(x=df['Age'])
+# print(i)
+
+# plt.hist(df['Age'])
+# plt.title("Age per person")
+# plt.ylabel('Numbers of person')
+# plt.xlabel('Current Age')
+# plt.show()
+
+# plt.hist(df['Age'],bins=35,alpha=0.45,color='red')
+# plt.show()
+
+# plt.hist(df['Age'],bins=100,alpha=20,color='red')
+# plt.hist(df['Salary'],bins=100,alpha=10,color='green')
+# plt.title("Histogram with multiple")
+# plt.legend(['age group','salary'])
+# plt.show()
+
+# plt.figure(figsize=(10,6))
+# sns.scatterplot(x=df['Age'],y=df['Salary'])
+
+
